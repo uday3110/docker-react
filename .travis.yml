@@ -5,4 +5,5 @@ services:
 before_install:
   - docker build -t uday3110/docker-react -f Dockerfile.dev .
 
-
+script:
+  - docker run uday3110/docker-react npm install -- -- coverage
